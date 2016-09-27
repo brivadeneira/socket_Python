@@ -57,15 +57,12 @@ def main(): #definición de la fción principal.
             if msg=='1':
                 info=str(hora.hour) + ":" + str(hora.minute);
                 c.send("La hora actual es: "+ info);
-                break;
             if msg=='2':
                 info=str(hora.hour) + ":" + str(hora.minute)+ ":" + str(hora.second);
                 c.send("La hora actual es: "+ info);
-                break;
             if msg=='3':
                 info=str(hora.hour) + ":" + str(hora.minute)+ ":" + str(hora.second)+ ":" + str(hora.microsecond);
-                c.send("La hora actual es: "+ info);
-                break;					
+                c.send("La hora actual es: "+ info);	
     except:
         try: 
             c.close()
